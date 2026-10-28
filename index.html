@@ -3,24 +3,36 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>The Profitless Boom — Inside the business of Japanese animation</title>
-<meta name="description" content="Anime is a record $25 billion industry. The studios that make it invoice a fraction of that, and most are not profitable. A data-led look at Japan's animation business: production committees, animator pay, and where the money actually goes.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23f6f3ec'/%3E%3Crect x='9' y='9' width='14' height='14' fill='%23bf3a2b' transform='rotate(45 16 16)'/%3E%3C/svg%3E">
-<link rel="stylesheet" href="styles.css">
-<script src="script.js" defer></script>
+<title>Kotoba — Standard Japanese + Kansai-ben from zero</title>
+<meta name="description" content="A free 100-level Japanese course for foreigners: standard Japanese first with Osaka Kansai-ben underneath, plus kana, 56 kanji, 68 situation phrases, a dialect map and the culture that keeps you curious.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='5' fill='%23c0412c'/%3E%3Ctext x='16' y='24' font-size='20' text-anchor='middle' fill='%23fff8f2' font-family='serif'%3E%E3%81%82%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&amp;family=Inter:wght@400;500;600&amp;family=Shippori+Mincho:wght@500;600&amp;family=Zen+Kaku+Gothic+New:wght@400;500;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=20261039">
+<script src="audio/manifest.js?v=20261039" defer></script>
+<script src="script.js?v=20261039" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 
 <header class="site-head">
   <div class="wrap site-head__inner">
-    <a class="brand" href="index.html"><span class="brand__mark" aria-hidden="true"></span>Profitless Boom</a>
-    <nav class="nav" aria-label="Sections">
-      <a href="index.html" aria-current="page">The Boom</a>
-      <a href="committee.html">Committee</a>
-      <a href="animators.html">Animators</a>
-      <a href="money.html">Money</a>
-      <a href="sources.html">Sources</a>
+    <a class="brand" href="index.html">
+      <span class="brand__seal" aria-hidden="true">言</span>
+      <span class="brand__name">Kotoba<span class="brand__sub">Standard + Kansai Japanese</span></span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <a href="lessons.html">Lessons</a>
+      <a href="kana.html">Kana</a>
+      <a href="kanji.html">Kanji</a>
+      <a href="phrases.html">Phrases</a>
+      <a href="dialects.html">Dialect</a>
+      <a href="culture.html">Culture</a>
+      <a class="btn btn--small nav__cta" href="lessons.html#start">Start level 1</a>
     </nav>
   </div>
 </header>
@@ -29,15 +41,30 @@
 
   <!-- ================= HERO ================= -->
   <section class="hero">
-    <div class="wrap">
-      <p class="kicker">Industry report · 2026</p>
-      <h1>Anime is a <em>$25 billion</em> business. The people who draw it are not.</h1>
-      <p class="hero__dek">Japan's animation industry set another record last year. The studios that actually produce the drawings invoiced about a tenth of that, and six in ten of them saw profits fall. This is how the money moves — and where it stops.</p>
-      <div class="hero__meta">
-        <span>8 min read</span>
-        <span>Figures: FY2024</span>
-        <span>Primary sources listed</span>
+    <div class="wrap hero__grid">
+      <div class="hero__copy">
+        <p class="eyebrow">A free 100-level course · 標準語 + 関西弁</p>
+        <h1>Standard Japanese,<br><em>with the Kansai version beside it.</em></h1>
+        <p class="hero__dek">A complete course from your first sound to N1. One hundred levels teach the Japanese you will actually use in Japan; every sentence also carries the Osaka-leaning Kansai way to say it underneath. Standard is the main line. Kansai is the colour you hear in shops, kitchens and stations.</p>
+        <div class="hero__actions">
+          <a class="btn" href="lessons.html#start">Start level 1
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="btn btn--ghost" href="phrases.html">Browse phrases</a>
+        </div>
+        <ul class="hero__points">
+          <li>100 levels to N1</li>
+          <li>No sign-up</li>
+          <li>Audio on every line</li>
+          <li>Writing &amp; speaking from level 51</li>
+          <li>Dialect map &amp; culture included</li>
+        </ul>
       </div>
+
+      <aside class="hero__aside" aria-label="Standard Japanese and Kansai-ben written in Japanese">
+        <span class="hero__vertical">標準語</span>
+        <span class="hero__seal"><span>関西弁</span><span>入門</span></span>
+      </aside>
     </div>
   </section>
 
@@ -45,211 +72,342 @@
   <div class="wrap">
     <div class="stats">
       <div class="stat">
-        <span class="stat__num">¥3.84<small>T</small></span>
-        <span class="stat__label">Total anime market, 2024 — a record, up 14.8%</span>
+        <span class="stat__num">92<small>kana</small></span>
+        <span class="stat__label">Hiragana and katakana characters — the two basic syllabaries, shared by standard Japanese and Kansai-ben</span>
       </div>
       <div class="stat">
-        <span class="stat__num">56<small>%</small></span>
-        <span class="stat__label">Share of revenue earned outside Japan</span>
+        <span class="stat__num">56<small>kanji</small></span>
+        <span class="stat__label">Characters with readings, example words, sentences and audio</span>
       </div>
       <div class="stat">
-        <span class="stat__num">¥340<small>B</small></span>
-        <span class="stat__label">What production companies actually invoiced</span>
+        <span class="stat__num">68<small>phrases</small></span>
+        <span class="stat__label">Everyday phrases grouped by real situation, standard line first</span>
       </div>
-      <div class="stat stat--flag">
-        <span class="stat__num">60<small>%</small></span>
-        <span class="stat__label">Of lead studios with falling profits or losses</span>
+      <div class="stat">
+        <span class="stat__num">100<small>levels</small></span>
+        <span class="stat__label">From first sounds and N5 to N1, with writing and speaking from level 51</span>
       </div>
     </div>
   </div>
 
-  <!-- ================= 01 ================= -->
-  <section class="section" id="sec-01">
+  <!-- ================= STEPS ================= -->
+  <section class="section">
     <div class="wrap">
-      <div class="section__head">
-        <div class="section__num">01</div>
-        <div>
-          <h2>Two numbers that should not belong to the same industry</h2>
-          <p>One measures everything anime touches. The other measures what animators are hired to make. The distance between them is the story.</p>
-        </div>
+      <div class="section__head" data-reveal>
+        <p class="eyebrow">The route</p>
+        <h2>One course.<br>Four habits.</h2>
+        <p>The lessons are the spine: 100 levels that take you from first sounds to N1. Kana, phrases and kanji are the supporting habits you build alongside them. Standard Japanese is the base; Kansai-ben is the colour on top.</p>
       </div>
 
-      <div class="split">
-        <div class="prose">
-          <p class="lede">The headline figure comes from the Association of Japanese Animations, which counts the whole commercial footprint of anime: theatrical tickets, streaming licences, Blu-ray, toys, games, events, character goods, overseas distribution. By that measure the industry reached ¥3.8407 trillion in 2024 — roughly US$25 billion — growing 14.8% in a year and more than tripling in fifteen.</p>
-
-          <p>Then there is the number that decides whether a studio can pay its staff. Teikoku Databank, which surveys the production companies themselves, put the domestic anime production market at about ¥340 billion in 2024. That is what gets invoiced for the work of making animation: scripts, layouts, key frames, in-betweens, colour, compositing, sound.</p>
-
-          <p>Roughly nine percent of the boom reaches the layer where the boom is manufactured. The rest is licensing and retail, and it is collected by the companies that own pieces of the intellectual property — broadcasters, publishers, music labels, trading houses, toy makers, streamers.</p>
-
-          <div class="note">
-            <span class="note__label">Why the definitions matter</span>
-            <p>These two figures are not competing estimates of the same thing. AJA's total is a broad market measure; Teikoku's is a narrow production-revenue measure. Reading them side by side is the point, not a contradiction. Both are reported figures, not projections.</p>
-          </div>
-
-          <h3>The growth is not where the work is</h3>
-          <p>In 2024, overseas revenue grew 26% while the domestic market grew 2.8%. Overseas sales now account for 56% of the total. Masahiko Hasegawa, lead author of the AJA report, described the shift plainly: the overseas market now far exceeds local revenue, and the gap will widen. He also noted that growth increasingly comes from bundled contracts spanning theatrical rights, streaming, merchandising and events — not simply from selling finished episodes.</p>
-
-          <p>Bundled deals are good news for rights holders. They are indifferent news for a subcontracting studio paid a fixed sum to deliver episodes on a schedule.</p>
-        </div>
-
-        <aside>
-          <div class="figure reveal">
-            <p class="figure__title">Where the ¥3.84 trillion comes from</p>
-            <p class="figure__sub">Share of total anime market revenue by region, 2024.</p>
-            <div class="sharebar" role="img" aria-label="Overseas 56 percent, domestic 44 percent">
-              <div class="sharebar__seg sharebar__seg--over" style="width:56%">Overseas 56%</div>
-              <div class="sharebar__seg sharebar__seg--dom" style="width:44%">Japan 44%</div>
-            </div>
-            <div class="legend">
-              <span><i class="sw-over"></i> ¥2.17T overseas (+26%)</span>
-              <span><i class="sw-dom"></i> ¥1.67T domestic (+2.8%)</span>
-            </div>
-          </div>
-
-          <div class="figure reveal" style="margin-top:1rem">
-            <p class="figure__title">Two ways of counting</p>
-            <p class="figure__sub">The same industry, measured at two different layers, 2024.</p>
-            <table class="table">
-              <thead>
-                <tr><th scope="col">Measure</th><th scope="col">2024</th></tr>
-              </thead>
-              <tbody>
-                <tr><td>Total anime market (AJA)</td><td>¥3.84T</td></tr>
-                <tr><td>Production revenue (Teikoku)</td><td>≈ ¥340B</td></tr>
-                <tr class="is-flag"><td>Production share</td><td>≈ 9%</td></tr>
-              </tbody>
-            </table>
-            <p class="table__note">Teikoku Databank estimates; figures are periodically revised and the two measures use different definitions.</p>
-          </div>
-        </aside>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= 02 ================= -->
-  <section class="section" id="sec-02">
-    <div class="wrap">
-      <div class="section__head">
-        <div class="section__num">02</div>
-        <div>
-          <h2>A record year in which most studios lost ground</h2>
-          <p>Teikoku Databank's survey of 177 production companies found the profit squeeze concentrated exactly where the drawing happens.</p>
-        </div>
-      </div>
-
-      <div class="split split--reverse">
-        <aside>
-          <div class="figure reveal">
-            <p class="figure__title">Profit direction, FY2024</p>
-            <p class="figure__sub">Share of lead (prime and gross contractor) studios reporting higher profits versus lower profits or losses.</p>
-            <div class="sharebar" role="img" aria-label="40 percent higher profits, 60 percent lower profits or losses">
-              <div class="sharebar__seg sharebar__seg--dom" style="width:40%">40%</div>
-              <div class="sharebar__seg sharebar__seg--over" style="width:60%">60%</div>
-            </div>
-            <div class="legend">
-              <span><i class="sw-dom"></i> Higher profit</span>
-              <span><i class="sw-over"></i> Lower profit or loss</span>
-            </div>
-            <p class="table__note">The share reporting higher profits fell more than 13 points year on year.</p>
-          </div>
-        </aside>
-
-        <div class="prose">
-          <p>The reason is not a lack of demand. It is a lack of hands. With more projects commissioned worldwide and a fixed pool of trained animators, studios are forced to extend schedules, which raises costs against budgets that were agreed earlier. Teikoku describes the result as a <strong>“profitless boom.”</strong></p>
-
-          <p>The split inside the industry is sharp. Subcontracting studios — the ones that take overflow work and draw the frames — averaged ¥438 million in annual revenue, their highest since 2007. But only about 38% of specialised studios were in the black in the 2023 survey, with more than four in ten posting losses. Lead studios have IP revenue to absorb cost overruns. Subcontractors generally do not.</p>
-
-          <p>Scale protects the largest players and leaves everyone else exposed. The number of studios doing business with foreign companies rose to 45.2%, up 4.4 points in a year — a sign that international money is arriving, though not necessarily at better margins.</p>
-
-          <blockquote class="pull">
-            Growth today includes bundled contracts that span theatrical rights, streaming, merchandising, and events — not just content distribution.
-            <cite>Masahiko Hasegawa, lead author, AJA Anime Industry Report</cite>
-          </blockquote>
-
-          <p>The Japanese government has made animation a pillar of its Cool Japan strategy, with targets for the content industry measured in trillions of yen by 2033. Policy attention has followed the money up the chain — to rights, exports and tourism. The bottleneck is further down, at the desk where a 24-year-old draws the frames between the key poses.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= 03 ================= -->
-  <section class="section" id="sec-03">
-    <div class="wrap">
-      <div class="section__head">
-        <div class="section__num">03</div>
-        <div>
-          <h2>Three structures explain almost all of it</h2>
-          <p>The committee that owns the show, the piece rate that pays the drawing, and the licence that captures the growth.</p>
-        </div>
-      </div>
-
-      <div class="cards">
-        <a class="card" href="committee.html">
-          <span class="card__num">Structure 01</span>
-          <span class="card__title">The production committee</span>
-          <p class="card__desc">A joint venture of broadcasters, publishers and trading houses spreads the risk of a ¥100–300 million season — and keeps the upside.</p>
-          <span class="card__go">Read →</span>
+      <div class="steps">
+        <a class="step" href="lessons.html#start" data-reveal>
+          <span class="step__top">
+            <span class="step__kanji" aria-hidden="true" data-reading="ichi">一</span>
+            <span class="step__num">Step 01 · the spine</span>
+          </span>
+          <h3>Follow the 100 levels</h3>
+          <p>From first sounds to N1, one pattern at a time. Every level has a can-do goal, three examples, a drill and a small curiosity note.</p>
+          <span class="step__go">Start level 1 →</span>
         </a>
-        <a class="card" href="animators.html">
-          <span class="card__num">Structure 02</span>
-          <span class="card__title">The piece rate</span>
-          <p class="card__desc">Animators are paid per drawing, not per hour. In-between staff averaged ¥2.63 million a year in 2023.</p>
-          <span class="card__go">Read →</span>
+        <a class="step" href="kana.html" data-reveal>
+          <span class="step__top">
+            <span class="step__kanji" aria-hidden="true" data-reading="ni">二</span>
+            <span class="step__num">Step 02 · 2–3 weeks</span>
+          </span>
+          <h3>Learn the two kana alphabets</h3>
+          <p>Hiragana first, katakana second. Forty-six shapes each, shared by standard Japanese and Kansai-ben.</p>
+          <span class="step__go">Open the charts →</span>
         </a>
-        <a class="card" href="money.html">
-          <span class="card__num">Structure 03</span>
-          <span class="card__title">The licence</span>
-          <p class="card__desc">Overseas streaming and merchandise now generate most of the revenue — for the companies holding the rights, not the ones holding the pencils.</p>
-          <span class="card__go">Read →</span>
+        <a class="step" href="phrases.html" data-reveal>
+          <span class="step__top">
+            <span class="step__kanji" aria-hidden="true" data-reading="san">三</span>
+            <span class="step__num">Step 03 · by situation</span>
+          </span>
+          <h3>Build a phrase kit</h3>
+          <p>Arrivals, hotels, restaurants, trains, pharmacies, emergencies. Sixty-eight phrases cover the moments when you need words now.</p>
+          <span class="step__go">Browse phrases →</span>
+        </a>
+        <a class="step" href="kanji.html" data-reveal>
+          <span class="step__top">
+            <span class="step__kanji" aria-hidden="true" data-reading="yon">四</span>
+            <span class="step__num">Step 04 · daily</span>
+          </span>
+          <h3>Read the signs around you</h3>
+          <p>Numbers, days, people, directions, travel and everyday actions. Fifty-six characters with readings, words and example sentences.</p>
+          <span class="step__go">Open the kanji →</span>
         </a>
       </div>
     </div>
   </section>
 
-  <!-- ================= 04 ================= -->
-  <section class="section" id="sec-04">
-    <div class="wrap">
-      <div class="section__head">
-        <div class="section__num">04</div>
-        <div>
-          <h2>What would actually change the number</h2>
-          <p>Not more demand. Demand is not the constraint.</p>
-        </div>
+  <!-- ================= KANA BAND ================= -->
+  <section class="band">
+    <div class="wrap band__grid">
+      <div data-reveal>
+        <p class="eyebrow eyebrow--light">Step one, properly</p>
+        <h2>Two alphabets.<br>Forty-six sounds.</h2>
+        <p>Japanese is built from mora — even, timed beats. Standard Japanese and Kansai-ben use exactly the same kana; only the words and the melody change. Learn the characters and you can read every basic sound in both, even before you understand the words. Tap any character here to hear it.</p>
+        <a class="btn btn--light" href="kana.html">Explore both charts
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
       </div>
-
-      <div class="split">
-        <div class="prose">
-          <p>Three levers show up repeatedly in industry reporting. The first is <strong>pre-funding from streamers</strong>, which can pay studios earlier and at higher rates than the committee model, though it also concentrates commissioning power in a handful of platforms.</p>
-
-          <p>The second is <strong>studio equity in the IP</strong>. When a studio sits on the committee rather than subcontracting to it, it shares in merchandising and licensing revenue instead of only invoicing for labour. A small number of studios have moved this way; most have not, because the investment required is capital they do not have.</p>
-
-          <p>The third is <strong>collective bargaining and transparency</strong>. The NAFCA survey — the first union-led survey of anime workers — found a median hourly rate of ¥1,111, slightly below Tokyo's minimum wage of ¥1,113, in a city where 85% of studios are located. Publishing that number is itself a form of pressure.</p>
-
-          <p>None of these fixes the shortage of trained animators, which is a decade-long problem. All of them change who absorbs the cost of it.</p>
-        </div>
-
-        <aside>
-          <div class="note">
-            <span class="note__label">On the numbers</span>
-            <p>Figures here are drawn from primary surveys and the reporting around them, current to FY2024. Market definitions differ between sources, and survey samples vary — where that matters, it is noted on the page.</p>
-            <p><a href="sources.html">Full source list and method →</a></p>
-          </div>
-          <div class="note" style="margin-top:1rem;border-left-color:var(--blue)">
-            <span class="note__label" style="color:var(--blue)">Scope</span>
-            <p>This site is about labour, finance and industrial structure. It is not a guide to shows, and it does not treat anime fandom as a curiosity.</p>
-          </div>
-        </aside>
+      <div class="kana-teaser" data-reveal aria-label="Sample hiragana with audio">
+        <button type="button" data-speak="あ" data-voice="std-f"><span class="jp">あ</span><span class="r">a</span></button>
+        <button type="button" data-speak="い" data-voice="std-f"><span class="jp">い</span><span class="r">i</span></button>
+        <button type="button" data-speak="う" data-voice="std-f"><span class="jp">う</span><span class="r">u</span></button>
+        <button type="button" data-speak="え" data-voice="std-f"><span class="jp">え</span><span class="r">e</span></button>
+        <button type="button" data-speak="お" data-voice="std-f"><span class="jp">お</span><span class="r">o</span></button>
+        <button type="button" data-speak="か" data-voice="std-f"><span class="jp">か</span><span class="r">ka</span></button>
+        <button type="button" data-speak="き" data-voice="std-f"><span class="jp">き</span><span class="r">ki</span></button>
+        <button type="button" data-speak="く" data-voice="std-f"><span class="jp">く</span><span class="r">ku</span></button>
+        <button type="button" data-speak="け" data-voice="std-f"><span class="jp">け</span><span class="r">ke</span></button>
+        <button type="button" data-speak="こ" data-voice="std-f"><span class="jp">こ</span><span class="r">ko</span></button>
       </div>
     </div>
   </section>
+
+  <!-- ================= PHRASES ================= -->
+  <section class="section">
+    <div class="wrap">
+      <div class="split-head">
+        <div class="section__head" data-reveal>
+          <p class="eyebrow">A phrase kit</p>
+          <h2>Useful before you are fluent.</h2>
+          <p>Three of the standard sentences that do the most work for a beginner. Press play, copy the words, and use them today — the Kansai option sits underneath each one, with its own audio.</p>
+        </div>
+        <a class="link-arrow" href="phrases.html">All 68 phrases <span>→</span></a>
+      </div>
+
+      <div class="phrase-grid">
+        <article class="phrase-card" data-reveal>
+          <span class="phrase-card__cat">Essentials</span>
+          <button class="speak" type="button" data-speak="すみません。" aria-label="Hear the standard form" data-voice="std-f">
+            <svg class="speak__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4Z"/><path d="M16.5 8.5a5 5 0 0 1 0 7"/><path d="M19 6a8.5 8.5 0 0 1 0 12"/></svg>
+            <span class="speak__bars" aria-hidden="true"><i></i><i></i><i></i></span>
+          </button>
+          <p class="phrase-card__jp" lang="ja">すみません。</p>
+          <p class="phrase-card__romaji">sumimasen.</p>
+          <p class="phrase-card__en">Excuse me / sorry</p>
+          <p class="phrase-card__kansai"><span class="phrase-card__kansai-tag">Kansai</span><span class="phrase-card__kansai-jp" lang="ja">すんません</span><span class="phrase-card__kansai-romaji">sunmasen</span><button class="speak speak--tiny" type="button" data-speak="すんません" aria-label="Hear the Kansai option" data-voice="kansai-m"><svg class="speak__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4Z"/><path d="M16.5 8.5a5 5 0 0 1 0 7"/><path d="M19 6a8.5 8.5 0 0 1 0 12"/></svg></button></p>
+          <p class="phrase-card__note"><strong>Kansai note:</strong> The Osaka contraction is the most useful dialect word on the site. Use it to call a server, stop a stranger, or apologise for bumping an elbow.</p>
+        </article>
+
+        <article class="phrase-card" data-reveal>
+          <span class="phrase-card__cat">Shopping</span>
+          <button class="speak" type="button" data-speak="いくらですか。" aria-label="Hear the standard form" data-voice="std-f">
+            <svg class="speak__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4Z"/><path d="M16.5 8.5a5 5 0 0 1 0 7"/><path d="M19 6a8.5 8.5 0 0 1 0 12"/></svg>
+            <span class="speak__bars" aria-hidden="true"><i></i><i></i><i></i></span>
+          </button>
+          <p class="phrase-card__jp" lang="ja">いくらですか。</p>
+          <p class="phrase-card__romaji">ikura desu ka</p>
+          <p class="phrase-card__en">How much is it?</p>
+          <p class="phrase-card__kansai"><span class="phrase-card__kansai-tag">Kansai</span><span class="phrase-card__kansai-jp" lang="ja">なんぼですか</span><span class="phrase-card__kansai-romaji">nanbo desu ka</span><button class="speak speak--tiny" type="button" data-speak="なんぼですか" aria-label="Hear the Kansai option" data-voice="kansai-m"><svg class="speak__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4Z"/><path d="M16.5 8.5a5 5 0 0 1 0 7"/><path d="M19 6a8.5 8.5 0 0 1 0 12"/></svg></button></p>
+          <p class="phrase-card__note"><strong>Kansai note:</strong> なんぼ is the Kansai “how much” and one of the words people listen for. Casual: なんぼ？</p>
+        </article>
+
+        <article class="phrase-card" data-reveal>
+          <span class="phrase-card__cat">Food &amp; drink</span>
+          <button class="speak" type="button" data-speak="おかいけいおねがいします。" aria-label="Hear the standard form" data-voice="std-f">
+            <svg class="speak__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4Z"/><path d="M16.5 8.5a5 5 0 0 1 0 7"/><path d="M19 6a8.5 8.5 0 0 1 0 12"/></svg>
+            <span class="speak__bars" aria-hidden="true"><i></i><i></i><i></i></span>
+          </button>
+          <p class="phrase-card__jp" lang="ja">おかいけいおねがいします。</p>
+          <p class="phrase-card__romaji">okaikei onegaishimasu.</p>
+          <p class="phrase-card__en">The bill, please</p>
+          <p class="phrase-card__kansai"><span class="phrase-card__kansai-tag">Kansai</span><span class="phrase-card__kansai-jp" lang="ja">おかいけい、おくれやす</span><span class="phrase-card__kansai-romaji">okaikei, okureyasu</span><button class="speak speak--tiny" type="button" data-speak="おかいけい、おくれやす" aria-label="Hear the Kansai option" data-voice="kansai-m"><svg class="speak__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4Z"/><path d="M16.5 8.5a5 5 0 0 1 0 7"/><path d="M19 6a8.5 8.5 0 0 1 0 12"/></svg></button></p>
+          <p class="phrase-card__note"><strong>Kansai note:</strong> At many places you pay at the till by the door; ごちそうさん as you leave is always welcome.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= LESSONS ================= -->
+  <section class="section section--tight">
+    <div class="wrap">
+      <div class="split-head">
+        <div class="section__head" data-reveal>
+          <p class="eyebrow">The lessons · 100 levels</p>
+          <h2>From あ to N1,<br>one level at a time.</h2>
+          <p>Ten units, ten levels each. The early units build the sounds and the N5 core; the middle units get you through daily life; the last units add nuance, opinion, keigo and the long conversation. Writing and speaking tasks begin at level 51.</p>
+        </div>
+        <a class="link-arrow" href="lessons.html">Open the course <span>→</span></a>
+      </div>
+
+      <div class="unit-grid" data-reveal>
+        <a class="unit-card" href="lessons.html#level-1" style="--unit-colour:#7f9bb5"><span class="unit-card__num">01</span><span class="unit-card__jlpt">Pre-N5 · 1–10</span><h3>Sounds and first words</h3><p lang="ja">音と はじめての ことば</p><span class="unit-card__meta">10 levels</span></a>
+        <a class="unit-card" href="lessons.html#level-11" style="--unit-colour:#7fa77a"><span class="unit-card__num">02</span><span class="unit-card__jlpt">N5 · 11–20</span><h3>The N5 core</h3><p lang="ja">N5の きほん</p><span class="unit-card__meta">10 levels</span></a>
+        <a class="unit-card" href="lessons.html#level-21" style="--unit-colour:#c9a650"><span class="unit-card__num">03</span><span class="unit-card__jlpt">N5 · 21–30</span><h3>Daily life</h3><p lang="ja">まいにちの せいかつ</p><span class="unit-card__meta">10 levels</span></a>
+        <a class="unit-card" href="lessons.html#level-31" style="--unit-colour:#c08a5e"><span class="unit-card__num">04</span><span class="unit-card__jlpt">N5 → N4 · 31–40</span><h3>The bridge to N4</h3><p lang="ja">N4への はし</p><span class="unit-card__meta">10 levels</span></a>
+        <a class="unit-card" href="lessons.html#level-41" style="--unit-colour:#c4624d"><span class="unit-card__num">05</span><span class="unit-card__jlpt">N4 · 41–50</span><h3>Practical N4</h3><p lang="ja">つかえる N4</p><span class="unit-card__meta">10 levels</span></a>
+        <a class="unit-card" href="lessons.html#level-51" style="--unit-colour:#8d76ad"><span class="unit-card__num">06</span><span class="unit-card__jlpt">N3 · 51–60</span><h3>N3 and your own voice</h3><p lang="ja">N3と じぶんの ことば</p><span class="unit-card__meta">10 levels · output</span></a>
+        <a class="unit-card" href="lessons.html#level-61" style="--unit-colour:#5f9e9a"><span class="unit-card__num">07</span><span class="unit-card__jlpt">N3 · 61–70</span><h3>Nuance and opinion</h3><p lang="ja">ニュアンスと いけん</p><span class="unit-card__meta">10 levels · output</span></a>
+        <a class="unit-card" href="lessons.html#level-71" style="--unit-colour:#b87087"><span class="unit-card__num">08</span><span class="unit-card__jlpt">N2 · 71–80</span><h3>The working language</h3><p lang="ja">N2の にほんご</p><span class="unit-card__meta">10 levels · output</span></a>
+        <a class="unit-card" href="lessons.html#level-81" style="--unit-colour:#8f7d5a"><span class="unit-card__num">09</span><span class="unit-card__jlpt">N2 · 81–90</span><h3>Range and speed</h3><p lang="ja">N2の ひろがり</p><span class="unit-card__meta">10 levels · output</span></a>
+        <a class="unit-card" href="lessons.html#level-91" style="--unit-colour:#3f5f8a"><span class="unit-card__num">10</span><span class="unit-card__jlpt">N1 · 91–100</span><h3>The long conversation</h3><p lang="ja">N1の ながい かいわ</p><span class="unit-card__meta">10 levels · output</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= KANJI ================= -->
+  <section class="section section--tight">
+    <div class="wrap">
+      <div class="split-head">
+        <div class="section__head" data-reveal>
+          <p class="eyebrow">Step four · 漢字</p>
+          <h2>Fifty-six characters,<br>with sentences.</h2>
+          <p>Numbers, days, people, directions, travel and everyday actions. The first 32 cards give readings and words; 24 more put each character inside a real sentence with audio — enough to recognise the signs, menus and forms around you.</p>
+        </div>
+        <a class="link-arrow" href="kanji.html">Open the kanji page <span>→</span></a>
+      </div>
+
+      <div class="kanji-teaser" data-reveal>
+        <a class="kanji-tile" href="kanji.html">
+          <span class="kanji-tile__char" lang="ja">一</span>
+          <span class="kanji-tile__reading" lang="ja">いち</span>
+          <span class="kanji-tile__meaning">one</span>
+        </a>
+        <a class="kanji-tile" href="kanji.html">
+          <span class="kanji-tile__char" lang="ja">日</span>
+          <span class="kanji-tile__reading" lang="ja">ひ</span>
+          <span class="kanji-tile__meaning">day</span>
+        </a>
+        <a class="kanji-tile" href="kanji.html">
+          <span class="kanji-tile__char" lang="ja">人</span>
+          <span class="kanji-tile__reading" lang="ja">ひと</span>
+          <span class="kanji-tile__meaning">person</span>
+        </a>
+        <a class="kanji-tile" href="kanji.html">
+          <span class="kanji-tile__char" lang="ja">上</span>
+          <span class="kanji-tile__reading" lang="ja">うえ</span>
+          <span class="kanji-tile__meaning">up</span>
+        </a>
+        <a class="kanji-tile" href="kanji.html">
+          <span class="kanji-tile__char" lang="ja">見</span>
+          <span class="kanji-tile__reading" lang="ja">みる</span>
+          <span class="kanji-tile__meaning">see</span>
+        </a>
+        <a class="kanji-tile" href="kanji.html">
+          <span class="kanji-tile__char" lang="ja">円</span>
+          <span class="kanji-tile__reading" lang="ja">えん</span>
+          <span class="kanji-tile__meaning">yen</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= DIALECT ================= -->
+  <section class="section section--tight">
+    <div class="wrap">
+      <div class="dx-home" data-reveal>
+        <div>
+          <p class="eyebrow eyebrow--light">The dialect atlas</p>
+          <h2>One country.<br>Nine ways to say it.</h2>
+          <p>Standard Japanese gets you understood. The local word gets you a smile. Open the map, pick one of the 47 prefectures, and hear the phrase that belongs there — with the standard Japanese right beside it.</p>
+          <a class="btn btn--light" href="dialects.html">Open the dialect map
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+        <div class="dx-home__words" aria-hidden="true">
+          <span class="dx-home__word"><b lang="ja">なまら</b><span>Hokkaido · very</span></span>
+          <span class="dx-home__word"><b lang="ja">やっとかめ</b><span>Chubu · long time no see</span></span>
+          <span class="dx-home__word"><b lang="ja">おおきに</b><span>Kansai · thank you</span></span>
+          <span class="dx-home__word"><b lang="ja">ぶち</b><span>Chugoku · very</span></span>
+          <span class="dx-home__word"><b lang="ja">ばり</b><span>Kyushu · very</span></span>
+          <span class="dx-home__word"><b lang="ja">めんそーれ</b><span>Okinawa · welcome</span></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FAQ ================= -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section__head" data-reveal>
+        <p class="eyebrow">Before you begin</p>
+        <h2>Honest answers.</h2>
+        <p>No “fluent in 30 days”, and no pretending Kansai-ben is the only Japanese. Just a clear idea of what this site can and cannot do for you.</p>
+      </div>
+
+      <div class="faq" data-reveal>
+        <details>
+          <summary>Do I need to learn kanji before I can speak?</summary>
+          <p>No. Speaking and reading are separate skills, and you can hold a simple conversation entirely in kana. This site teaches kana and spoken patterns first, then adds 56 basic kanji once the sounds are familiar — the last 24 inside full example sentences. Learn them with words, not as a separate mountain.</p>
+        </details>
+        <details>
+          <summary>Which kind of Japanese do you teach?</summary>
+          <p>Standard Japanese is the main line; Osaka-leaning Kansai-ben is the option underneath it. Every phrase leads with the standard form and adds a Kansai version below, and every dialogue is standard first with the Kansai version in a fold-out. That way you can use です／ます in a formal situation and switch to dialect when the room is relaxed. Kansai-ben is a family, not one accent — Kyoto and Kobe have their own flavours, and locals mix dialect with standard Japanese all the time.</p>
+        </details>
+        <details>
+          <summary>What about Kyoto, Kobe, Nagoya or Hiroshima?</summary>
+          <p>Kansai-ben is a family, not one accent: Kyoto is softer, Kobe has its own lilt, and Nagoya and Hiroshima sit outside Kansai altogether. The <a href="dialects.html">dialect map</a> covers all nine regions, with local phrases and standard equivalents, so you can hear the difference rather than just read about it.</p>
+        </details>
+        <details>
+          <summary>How long until I can have a conversation?</summary>
+          <p>For a short transactional conversation — ordering, asking directions, introducing yourself — most learners need a few weeks of regular practice. For a comfortable everyday conversation, think in months, not days. Ten focused minutes a day is a realistic start.</p>
+        </details>
+        <details>
+          <summary>Is the audio a real human voice?</summary>
+          <p>The play buttons use bundled Japanese neural voices, not the robotic voice your browser happens to have installed: a clear standard voice for the main lines, and a slower, lower Osaka-style male voice for Kansai lines and the dialect map. They are studio-quality approximations, not live human recordings, and a neural voice cannot reproduce a true Osaka accent. Use them to check the words and rhythm, then copy the melody from Kansai speakers, radio or TV. Nothing is uploaded and no account is needed.</p>
+        </details>
+        <details>
+          <summary>Is this a replacement for a teacher or textbook?</summary>
+          <p>It is a full structured course, but not a replacement for a person. The 100 levels take you from the five vowels to N1 grammar, with writing and speaking tasks from level 51, and every line has audio. What no site can give you is someone reacting to your mistakes in real time. Use the levels to arrive at class with better questions; a teacher or a patient native speaker is still the fastest way to fix pronunciation.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CTA ================= -->
+  <div class="wrap">
+    <section class="cta-panel" data-reveal>
+      <div>
+        <p class="eyebrow eyebrow--light">Ready when you are</p>
+        <h2>Start with level one.</h2>
+        <p>Five vowels, a handful of greetings, and one small win. Then level two. The course runs to N1, but you only ever have to do the next ten minutes. No sign-up, no streak to protect — just come back when you can.</p>
+      </div>
+      <a class="btn btn--light" href="lessons.html#start">Start level 1
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </section>
+  </div>
 
 </main>
 
 <footer class="site-foot">
-  <div class="wrap site-foot__inner">
-    <p>The Profitless Boom — an independent, source-based explainer on the business of Japanese animation. Figures FY2024 unless stated. Built as a static site.</p>
-    <p><a href="sources.html">Sources</a> · <a href="#main">Back to top</a></p>
+  <div class="wrap">
+    <div class="site-foot__grid">
+      <div>
+        <a class="brand foot-brand" href="index.html">
+          <span class="brand__seal" aria-hidden="true">言</span>
+          <span class="brand__name">Kotoba<span class="brand__sub">Standard + Kansai Japanese</span></span>
+        </a>
+        <p>A free 100-level Japanese course for foreigners: standard Japanese first, Osaka Kansai-ben underneath, and the culture that keeps you curious.</p>
+      </div>
+      <div>
+        <h3>Learn</h3>
+        <ul>
+          <li><a href="lessons.html">100-level course</a></li>
+          <li><a href="kana.html">Kana charts &amp; quiz</a></li>
+          <li><a href="kanji.html">Kanji with sentences</a></li>
+          <li><a href="phrases.html">Situation phrasebook</a></li>
+          <li><a href="dialects.html">Dialect map</a></li>
+          <li><a href="culture.html">History &amp; proverbs</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Good to know</h3>
+        <ul>
+          <li>Standard + Osaka-leaning Kansai</li>
+          <li>100 levels, level 1 to N1</li>
+          <li>Writing &amp; speaking from level 51</li>
+          <li>Progress is saved on this device only</li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-foot__note">
+      <span>© <span class="js-year">2026</span> Kotoba · A demonstration site. No accounts, no tracking.</span>
+      <span>おおきに — thanks for learning.</span>
+    </div>
   </div>
 </footer>
 
