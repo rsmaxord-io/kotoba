@@ -1,2 +1,8 @@
 .DS_Store
 *.log
+
+# local QA / audio comparison pages, not part of the public site
+nihongo/audio-lab.html
+nihongo/audio-lab/
+nihongo/kana-lab.html
+nihongo/_qa-*.html
